@@ -15,16 +15,16 @@
 </head>
 <body>
   <header>
-    <div>Driven Eats</div>
+    <div>DrivenEats</div>
     <div>Sua comida em 6 minutos</div>
   </header>
 
   <div class="menu">
     <section>
       <div class="title">Primeiro, seu prato</div>
-      <div class="options Plates">
+      <div class="options dishes">
 
-        <div class="option Carne" onclick="selectPlates(this)">
+        <div class="option Carne" onclick="selectdishes(this)">
           <img src="imagens/carne.jpg" alt="">
           <div class="title1">Picanha M</div>
           <div class="description">Bife, arroz, feijão, batata e salada</div>
@@ -34,7 +34,7 @@
           </div>
         </div>
 
-        <div class="option Vegetariano" onclick="selectPlates(this)">
+        <div class="option Vegetariano" onclick="selectdishes(this)">
           <img src="imagens/vegetariano.jpg" alt="">
           <div class="title1">Poke Vegetariano</div>
           <div class="description">Poke vegetariano simples</div>
@@ -44,7 +44,7 @@
           </div>
         </div>
 
-        <div class="option Frango" onclick="selectPlates(this)">
+        <div class="option Frango" onclick="selectdishes(this)">
           <img src="imagens/frango_yin_yang.png" alt="">
           <div class="title1">Frango Yin Yang</div>
           <div class="description">Um pouco de batata, um pouco de salada</div>
@@ -54,7 +54,7 @@
           </div>
         </div>
 
-        <div class="option Salada" onclick="selectPlates(this)">
+        <div class="option Salada" onclick="selectdishes(this)">
           <img src="imagens/fit.jpg" alt="">
           <div class="title1">Salada</div>
           <div class="description">Mix de folhas com batatas</div>
@@ -160,7 +160,7 @@
   </div>
 
   <footer>
-    <div class="finish">
+    <div class="finish" onclick="confirmorder()">
       Selecione os 3 itens <br> para fechar o pedido
     </div>
   </footer>

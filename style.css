@@ -28,6 +28,7 @@ header :first-child{
     font-family: 'Righteous', cursive;
     color:#FFFFFF ;
     font-size: 44px;
+    font-weight: 400;
     letter-spacing: -1.2%;
     line-height: 54px;
 }
@@ -35,6 +36,7 @@ header :last-child{
     color:#FFFFFF;
     font-size: 18px;
     line-height: 21px;
+    font-weight: 400;
 }
 .menu{
     margin-top: 80px;
@@ -146,3 +148,11 @@ footer{
  letter-spacing: -1.8%;
  line-height: 24px;
 }
+
+.finish-button {
+    background-color: #32b72f;
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 1.8%;
+    line-height: 24px;
+  }

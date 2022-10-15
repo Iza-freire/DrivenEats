@@ -1,11 +1,16 @@
-function selectPlates(platesclicked) {
-    const platespreviouslyselected = document.querySelector(".Plates .selected");
+function selectdishes(dishesclicked) {
+    const dishespreviouslyselected = document.querySelector(".dishes .selected");
   
-    if (platespreviouslyselected !== null) {
-      platespreviouslyselected.classList.remove("selected");
+    if (dishespreviouslyselected !== null) {
+        dishespreviouslyselected.classList.remove("selected");
     }
   
-    platesclicked.classList.add("selected");
+    dishesclicked.classList.add("selected");
+
+    dishes = dishesclicked.querySelector(".title1").innerHTML;
+    pricedishes = dishesclicked.querySelector(".price").innerHTML;
+  
+    liberaPedido();
   
 }
 
@@ -17,6 +22,11 @@ function selectdrinks(drinksclicked) {
     }
   
     drinksclicked.classList.add("selected");
+
+    drinks = drinksclicked.querySelector(".title1").innerHTML;
+    pricedrinks = drinksclicked.querySelector(".price").innerHTML;
+  
+    liberaPedido();
 }
 
 function selectdesserts(dessertsclicked) {
@@ -29,4 +39,19 @@ function selectdesserts(dessertsclicked) {
     }
   
     dessertsclicked.classList.add("selected");
+
+    desserts = dessertsclicked.querySelector(".title1").innerHTML;
+    pricedesserts = dessertsclicked.querySelector(".price").innerHTML;
+  
+    liberaPedido();
+}
+
+function liberaPedido() {
+    let button = document.querySelector(".finish");
+  
+    if (dishes !== undefined && drinks !== undefined && desserts !== undefined) {
+      button.classList.add("finish-button");
+      button.disabled = false;
+      button.innerHTML = "Fechar pedido";
+    }
 }
