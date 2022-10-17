@@ -10,7 +10,8 @@
     <link rel="stylesheet" href="style.css">
 
 
-    <title>Driven Eats</title>
+    <title>DrivenEats</title>
+    <link rel="shortcut icon" href="imagens/favicon-_2_.ico"image/x-icon" />
 
 </head>
 <body>
@@ -22,43 +23,43 @@
   <div class="menu">
     <section>
       <div class="title">Primeiro, seu prato</div>
-      <div class="options dishes">
+      <div class="options dishes" data-test="dishes">
 
-        <div class="option Carne" onclick="selectdishes(this)">
+        <div class="option Carne" data-test="food-option" onclick="selectdishes(this)">
           <img src="imagens/carne.jpg" alt="">
-          <div class="title1">Picanha M</div>
+          <div class="title1" data-test="food-title">Picanha M</div>
           <div class="description">Bife, arroz, feijão, batata e salada</div>
-          <div class="price">R$ 33,50</div>
+          <div class="price" data-test="food-price">R$ 33,50</div>
           <div class="check">
             <ion-icon name="checkmark-circle"></ion-icon>
           </div>
         </div>
 
-        <div class="option Vegetariano" onclick="selectdishes(this)">
+        <div class="option Vegetariano" data-test="food-option" onclick="selectdishes(this)">
           <img src="imagens/vegetariano.jpg" alt="">
-          <div class="title1">Poke Vegetariano</div>
+          <div class="title1" data-test="food-title">Poke Vegetariano</div>
           <div class="description">Poke vegetariano simples</div>
-          <div class="price">R$ 28,70</div>
+          <div class="price" data-test="food-price">R$ 28,70</div>
           <div class="check">
             <ion-icon name="checkmark-circle"></ion-icon>
           </div>
         </div>
 
-        <div class="option Frango" onclick="selectdishes(this)">
+        <div class="option Frango" data-test="food-option" onclick="selectdishes(this)">
           <img src="imagens/frango_yin_yang.png" alt="">
-          <div class="title1">Frango Yin Yang</div>
+          <div class="title1" data-test="food-title">Frango Yin Yang</div>
           <div class="description">Um pouco de batata, um pouco de salada</div>
-          <div class="price">R$ 14,90</div>
+          <div class="price" data-test="food-price">R$ 14,90</div>
           <div class="check">
             <ion-icon name="checkmark-circle"></ion-icon>
           </div>
         </div>
 
-        <div class="option Salada" onclick="selectdishes(this)">
+        <div class="option Salada" data-test="food-option" onclick="selectdishes(this)">
           <img src="imagens/fit.jpg" alt="">
-          <div class="title1">Salada</div>
+          <div class="title1" data-test="food-title">Salada</div>
           <div class="description">Mix de folhas com batatas</div>
-          <div class="price">R$ 10,55</div>
+          <div class="price" data-test="food-price">R$ 10,55</div>
           <div class="check">
             <ion-icon name="checkmark-circle"></ion-icon>
           </div>
@@ -68,43 +69,43 @@
 
     <section>
       <div class="title">Agora, sua bebida</div>
-      <div class="options drinks">
+      <div class="options drinks" data-test="drinks">
 
-        <div class="option Coca" onclick="selectdrinks(this)">
+        <div class="option Coca" data-test="food-option" onclick="selectdrinks(this)">
           <img src="imagens/coquinha_gelada.png" alt="">
-          <div class="title1">Coca gelada</div>
+          <div class="title1" data-test="food-title">Coca gelada</div>
           <div class="description">Lata 350ml</div>
-          <div class="price">R$ 6,99</div>
+          <div class="price" data-test="food-price">R$ 6,99</div>
           <div class="check">
             <ion-icon name="checkmark-circle"></ion-icon>
           </div>
         </div>
 
-      <div class="option Guarana"  onclick="selectdrinks(this)">
+      <div class="option Guarana" data-test="food-option" onclick="selectdrinks(this)">
         <img src="imagens/guarana.jpg" alt="">
-        <div class="title1">Guaraná</div>
+        <div class="title1" data-test="food-title">Guaraná</div>
         <div class="description">Lata 350ml</div>
-        <div class="price">R$ 5,99</div>
+        <div class="price" data-test="food-price">R$ 5,99</div>
         <div class="check">
           <ion-icon name="checkmark-circle"></ion-icon>
         </div>
       </div>
 
-      <div class="option Suco"  onclick="selectdrinks(this)">
+      <div class="option Suco" data-test="food-option" onclick="selectdrinks(this)">
         <img src="imagens/suco.jpg" alt="">
-        <div class="title1">Suco Del Valle</div>
+        <div class="title1" data-test="food-title">Suco Del Valle</div>
         <div class="description">Garrafa 1L</div>
-        <div class="price">R$ 4,99</div>
+        <div class="price" data-test="food-price">R$ 4,99</div>
         <div class="check">
           <ion-icon name="checkmark-circle"></ion-icon>
         </div>
       </div>
 
-      <div class="option Fanta"  onclick="selectdrinks(this)">
+      <div class="option Fanta" data-test="food-option" onclick="selectdrinks(this)">
         <img src="imagens/fanta-maracuja.jpg" alt="">
-        <div class="title1">Fanta maracujá</div>
+        <div class="title1" data-test="food-title">Fanta maracujá</div>
         <div class="description">Garrafa 2L</div>
-        <div class="price">R$ 8,99</div>
+        <div class="price" data-test="food-price">R$ 8,99</div>
         <div class="check">
           <ion-icon name="checkmark-circle"></ion-icon>
         </div>
@@ -114,43 +115,43 @@
 
     <section>
       <div class="title">Por fim, sua sobremesa</div>
-      <div class="options desserts">
+      <div class="options desserts" data-test="desserts">
 
-        <div class="option Pudim"  onclick="selectdesserts(this)">
+        <div class="option Pudim" data-test="food-option" onclick="selectdesserts(this)">
           <img src="imagens/pudim.png" alt="">
-          <div class="title1">Pudim</div>
+          <div class="title1" data-test="food-title">Pudim</div>
           <div class="description">280g</div>
-          <div class="price">R$ 7,90</div>
+          <div class="price" data-test="food-price">R$ 7,90</div>
           <div class="check">
             <ion-icon name="checkmark-circle"></ion-icon>
           </div>
         </div>
 
-        <div class="option Musse" onclick="selectdesserts(this)">
+        <div class="option Musse" data-test="food-option" onclick="selectdesserts(this)">
           <img src="imagens/musse.jpg" alt="">
-          <div class="title1">Musse maracujá</div>
+          <div class="title1" data-test="food-title">Musse maracujá</div>
           <div class="description">350g</div>
-          <div class="price">R$ 9,90</div>
+          <div class="price" data-test="food-price">R$ 9,90</div>
           <div class="check">
             <ion-icon name="checkmark-circle"></ion-icon>
           </div>
         </div>
 
-        <div class="option Taça" onclick="selectdesserts(this)">
+        <div class="option Taça" data-test="food-option" onclick="selectdesserts(this)">
           <img src="imagens/taça.jpg" alt="">
-          <div class="title1">Taça delicia</div>
+          <div class="title1" data-test="food-title">Taça delicia</div>
           <div class="description">500g</div>
-          <div class="price">R$ 15,90</div>
+          <div class="price" data-test="food-price">R$ 15,90</div>
           <div class="check">
             <ion-icon name="checkmark-circle"></ion-icon>
           </div>
         </div>
 
-        <div class="option Bolo" onclick="selectdesserts(this)">
+        <div class="option Bolo" data-test="food-option" onclick="selectdesserts(this)">
           <img src="imagens/bolo.jpg" alt="">
-          <div class="title1">Bolo de brigadeiro</div>
+          <div class="title1" data-test="food-title">Bolo de brigadeiro</div>
           <div class="description">260g</div>
-          <div class="price">R$ 8,90</div>
+          <div class="price" data-test="food-price">R$ 8,90</div>
           <div class="check">
             <ion-icon name="checkmark-circle"></ion-icon>
           </div>
@@ -159,8 +160,30 @@
     </section>
   </div>
 
+  <div class="whats">
+    <div class="enviarpedido">
+      <ul>
+        <li class="dishes">
+          <div class="name">Picanha M</div>
+          <div class="price">33,50</div>
+        </li>
+        <li class="drink">
+          <div class="name">coca gelada</div>
+          <div class="price">6,99</div>
+        </li>
+        <li class="dessert">
+          <div class="name">Pudim</div>
+          <div class="price">7.99</div>
+        </li>
+        <li class="Total">
+          <div class="price-total">R$ **</div>
+        </li>
+      </ul>
+    </div>
+  </div>
+
   <footer>
-    <div class="finish" onclick="confirmorder()">
+    <div class="finish" data-test="finish-button" onclick="finishorder()">
       Selecione os 3 itens <br> para fechar o pedido
     </div>
   </footer>
